@@ -1,4 +1,4 @@
-package com.my.regularExpression.base;
+package com.my.utils;
 
 public class Test {
 
