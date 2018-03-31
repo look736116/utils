@@ -5,19 +5,27 @@
 	<artifactId>utils</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>utils</name>
+	<packaging>jar</packaging>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+					<compilerArgs>
+						<arg>-extdirs</arg>
+						<arg>${project.basedir}/lib</arg>
+					</compilerArgs>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -54,6 +62,7 @@
 		</dependency>
 
 	</dependencies>
+
 
 
 </project>

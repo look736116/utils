@@ -23,32 +23,26 @@ public class UsePoiCreateExcle {
 		Sheet sheet1 = workbook.createSheet("teacher");
 		Sheet sheet2 = workbook.createSheet("student");
 
-		// 设置为当前页面
 		workbook.setActiveSheet(0);
 
-		// 创建行
 		Row row = sheet1.createRow(0);
 
-		// 创建表格
 		Cell cell1 = row.createCell(0);
 		Cell cell2 = row.createCell(1);
 		Cell cell3 = row.createCell(2);
 
 		CellStyle style = workbook.createCellStyle();
-		// 对齐方式
 		style.setAlignment(CellStyle.ALIGN_CENTER);
 
-		// 先设置样式再设置颜色
 		style.setBorderBottom(CellStyle.BORDER_THICK);
 		style.setBottomBorderColor(HSSFColor.RED.index);
 
-		//先设置填充样式再设置颜色
 		style.setFillPattern(CellStyle.ALT_BARS);
 		style.setFillForegroundColor(HSSFColor.GREEN.index);
-		cell1.setCellValue("序号");
+		cell1.setCellValue("濮撳悕");
 		cell1.setCellStyle(style);
-		cell2.setCellValue("姓名");
-		cell3.setCellValue("年龄");
+		cell2.setCellValue("骞撮緞");
+		cell3.setCellValue("鎬у埆");
 		System.out.println("=============");
 		try {
 			FileOutputStream out = new FileOutputStream(path);
