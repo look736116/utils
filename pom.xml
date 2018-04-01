@@ -61,6 +61,12 @@
 			<version>2.6.12</version>
 		</dependency>
 
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.0.2</version>
+		</dependency>
+
 	</dependencies>
 
 
